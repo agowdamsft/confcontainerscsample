@@ -15,3 +15,9 @@ a {
   color: #6dd5fa;
   padding-block: 20;
 }
+
+.logo
+{
+  max-width: 200px;
+
+}

@@ -1,65 +1,16 @@
-doctype 5
 html
   head
     title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-    script(type="text/javascript", src="https://code.jquery.com/jquery-3.5.1.min.js")
-		link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css')
-		script(type="text/javascript", src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js")
+    block scripts
+      script(src='https://code.jquery.com/jquery-3.5.1.min.js')
+      script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js')
+      link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css")
+      link(rel="stylesheet", href="/stylesheets/style.css")
   body
-      .row
-        div.topstrip(style="width:100%;padding-bottom:20px; padding-top:20px;")
-          div.header
-            a(href="/")
-              img(src="/images/logo192.png", style="text-align:middle;")
-            div.well.pngback#login(style="float:right;")
-              a.btn.btn-success.strange( href="#") Sign up 
-                i.icon.icon-ok-circle.icon-white
-              a.btn.btn-info(href="#") Log in 
-                i.icon.icon-user.icon-white
-              a.btn.btn-info(href="#", style="margin-left:10px;") Upload 
-                i.icon.icon-upload.icon-white
-            div.well.pngback(style="float:right;height:28px; margin-right:20px;")
-              form
-                button.btn.btn-info(type="submit", style="float:right;margin-left:10px;",)
-                  i.icon-search.icon-white
-                input.form-inline.input-append(type="text", placeholder="Search", style="float:right;")
-            div.navbar(style="margin-bottom:-20px; margin-top:10px")
-              div(style="padding:7px;margin-bottom:-20px; background:transparent;")
-                div.container
-                  a.btn.btn-info.navdan(href="/") Home 
-                    i.icon.icon-home.icon-white
-                  a.btn.btn-info.navdan(href="/about") About Us
-                    i.icon.icon-gift.icon-white
-      .row
-        block content
-      .row
-        div.footer(style="margin-top:70px; height:260px;")
-          center
-            br
-          div.welltran.sector.center(style="color:white;text-shadow:2px 2px 4px #000000; height:200px;")
-            div(style="float:left; width:33%;")
-              //section1
-              h1 Map
-              ul
-                li
-                  a.btn.btn-info.navdan(href="/") Home 
-                    i.icon.icon-home.icon-white
-                li
-                  a.btn.btn-info.navdan(href="/about") About Us 
-                    i.icon.icon-gift.icon-white
-                li		
-                  a.btn.btn-info.strange( href="#") Sign up 
-                    i.icon.icon-ok-circle.icon-white
-                li
-                  a.btn.btn-info(href="#") Log in 
-                    i.icon.icon-user.icon-white
-                li
-                  a.btn.btn-info(href="#") Upload 
-                    i.icon.icon-upload.icon-white
-            div(style="float:left; width:33%;")
-              //section2
-              h1 Social
-            div(style="float:left; width:33%;")
-              //section3
-              h1 Legal Info
+    block header
+      #logo
+        img(src="/images/logo192.png", alt="Logo", class="logo" srcset="")
+    block content
+    block foot
+      #footer
+        p Copyright - All Rights Reserved.
