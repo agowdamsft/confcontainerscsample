@@ -1,0 +1,47 @@
+extends layout
+
+block content
+    h1= title
+    h2="Patent Intake Form"
+    form(name="add-estimation", method="post")
+        div.input
+            span.label First Name
+            input(type="text", name="fname")
+        div.input
+            span.label Last Name
+            textarea(type="text",name="lname")
+        div.input
+            span.label Address
+            textarea(type="text",name="address")
+        div.input
+            span.label City
+            input(type="text", name="city", cols="40")
+        div.input
+            span.label State
+            textarea(type="text",name="state", cols="40")
+        div.input
+            span.label SSN
+            textarea(type="text",name="ssn")
+        div.input
+            span.label Email
+            textarea(type="text",name="email")
+        div.input
+            span.label DOB
+            textarea(type="text",name="dob")
+        div.input
+            span.label Contact Phone
+            textarea(type="text",name="phone")
+        div.input
+            span.label Drug Allergies
+            textarea(type="text",name="allergies", rows="4")
+         div.input
+            span.label Pre Existing Conditions
+            textarea(type="text",name="preexisting", rows="4")
+        div.input
+            span.label Date Admitted
+            textarea(type="text",name="dateadmitted")
+        div.input
+            span.label Insurance Provider
+            textarea(type="text",name="insurance")
+        div.actions
+            input(type="submit", class="btn" value="Submit")

@@ -1,0 +1,17 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: linear-gradient(to right, #6dd5fa, #2980b9, #6dd5fa);
+}
+
+a {
+  color: #0dddFF;
+}
+
+.btn
+{
+  background:green;
+  font:14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: #6dd5fa;
+  padding-block: 20;
+}
