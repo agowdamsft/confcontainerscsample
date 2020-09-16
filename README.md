@@ -1,12 +1,16 @@
-# Project Name
+# Confidential Containers Samples
 
-(short, 1-3 sentenced, description of the project)
+The term “confidential containers” refers to docker application (new or existing) containers packaged with additional components if necessary to run on the hardware that provides strong protections of Confidential Computing as listed above and meets the below list of criteria to improve the overall security posture of the container application and the data-in-use.
 
-## Features
+Confidential containers is about taking an existing docker container application and running it on a hardware based Trusted Execution Environment (enclave). This packaging and execution protects the data-in-use with added benefits of container IP protection through container encryption and secure mounting of containers in the host to isolation execution.
 
-This project framework provides the following features:
+[Read more here](http://aka.ms/confidentialcomputing)
 
-* Feature 1
+## Samples Collection Index
+
+This repo is organized by folders that states the sample name followed by the enablers of confidential containers. A typical folder name follows this standard < samplename >-< enabername > :
+
+* [Confidential HealthCare Demo With Scone, Confidential Inferencing & Azure Attestation](confidential-healthcare-scone-confinf/README.md) 
 * Feature 2
 * ...
 
@@ -14,7 +18,8 @@ This project framework provides the following features:
 
 ### Prerequisites
 
-(ideally very short, if any)
+This implementation assumed the samples would be deployed into Azure Kubernetes Service (AKS) with Confidential Computing Nodes.
+
 
 - OS
 - Library version
