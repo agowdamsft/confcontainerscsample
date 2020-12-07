@@ -1,0 +1,39 @@
+{
+  "fname": "Jane",
+  "lname": "Doe",
+  "address": "123 Main Street",
+  "city": "Richmond",
+  "state": "Washington",
+  "ssn": "123-223-2345",
+  "email": "nramar@hotmail.com",
+  "dob": "01/0/2010",
+  "contactphone": "123-234-3456",
+  "employmentinfo": [
+    {
+      "ename": "ABC Company",
+      "datefrom": "1/1/2020",
+      "dateto": "8/8/2020"
+    },
+    {
+      "ename": "CCB Company",
+      "datefrom": "12/31/2017",
+      "dateto": "12/31/2019"
+    }
+  ],
+  "requestedloanamount": 350000,
+  "assettsinfo": [
+    {
+      "type": "bankaccount",
+      "worth": 13000,
+      "name": "Bank of America"
+
+    },
+    {
+      "type": "tradingaccount",
+      "worth": 24000,
+      "name": "Robinhood Inc"
+
+    }
+
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "j7CIFZH1M/pVkZT48FSa3h6lNbIXaWgYtgT+GoIjPxObSdIzjZd8II/NfaUr8bGzlyGy08L/yt4iqwqjTgfKuA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\amgowda\\source\\repos\\sgxakssample\\NetCoreWebApp\\HospitalPortal\\HospitalPortal.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\amgowda\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512"
+  ],
+  "logs": []
+}
