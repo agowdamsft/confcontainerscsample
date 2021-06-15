@@ -17,14 +17,14 @@ spec:
   restartPolicy: Never 
   containers: 
   - name: app-sgx 
-    image: banne01/convert:flask-sgx-dcap
+    image: banne01/convert:mpcpython-sgx
     volumeMounts: 
     - name: dev-sgx 
       mountPath: /dev/sgx/enclave 
     securityContext: 
       privileged: true 
     ports: 
-    - containerPort: 5000 
+    - containerPort: 4996 
       name: http 
       protocol: TCP 
   volumes: 
@@ -32,3 +32,14 @@ spec:
     hostPath: 
       path: /dev/sgx/enclave 
       type: CharDevice
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: python-webapi-for-serv
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 4996
+  selector:
+    app: python-sgx
